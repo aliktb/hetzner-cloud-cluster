@@ -27,3 +27,7 @@ To delete:
 ```bash
 hetzner-k3s delete --config cluster_config.yaml
 ```
+
+## Credits
+
+Credits to the project that this relies on: https://github.com/vitobotta/hetzner-k3s
