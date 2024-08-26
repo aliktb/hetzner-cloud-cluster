@@ -1,0 +1,4 @@
+.envrc
+*.log
+kubeconfig
+.vscode
