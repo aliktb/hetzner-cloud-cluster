@@ -55,7 +55,7 @@ masters_pool:
 
 worker_node_pools:
 - name: small-static
-  instance_type: cx22
+  instance_type: cx32
   instance_count: 1
   location: nbg1
   # image: debian-11
