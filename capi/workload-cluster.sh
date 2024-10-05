@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Generate the manifests defining a workload cluster, and apply them to the bootstrap cluster
-clusterctl generate cluster hetzner-cluster --kubernetes-version v1.31.1 > hetzner-cluster.yaml
+clusterctl generate cluster hetzner-cluster --kubernetes-version v1.30.5 > hetzner-cluster.yaml
 
 kubectl -n caph-system rollout status deployment caph-controller-manager
 
