@@ -1,10 +1,8 @@
+.env
 .envrc
 *.log
 kubeconfig
 .vscode
-<<<<<<< Updated upstream
-=======
 kubeconfig.yaml
  hetzner-cluster-kubeconfig.yaml
 
->>>>>>> Stashed changes
