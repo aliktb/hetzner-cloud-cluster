@@ -1,7 +1,7 @@
 ---
-cluster_name: test
+cluster_name: voyager
 kubeconfig_path: "./kubeconfig"
-k3s_version: v1.31.0+k3s1
+k3s_version: v1.31.2+k3s1
 
 networking:
   ssh:
@@ -50,13 +50,13 @@ schedule_workloads_on_masters: false
 
 masters_pool:
   instance_type: cx22
-  instance_count: 3
+  instance_count: 1
   location: nbg1
 
 worker_node_pools:
-- name: small-static
+- name: ranger
   instance_type: cx32
-  instance_count: 1
+  instance_count: 3
   location: nbg1
   # image: debian-11
   # labels:
