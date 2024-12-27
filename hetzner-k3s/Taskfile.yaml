@@ -1,0 +1,18 @@
+version: '3'
+
+tasks:
+  up:
+    cmds:
+    - hetzner-k3s create --config cluster_config.yaml | tee create.log
+
+  down:
+    cmds:
+    - hetzner-k3s delete --config cluster_config.yaml
+
+  upgrade:
+    cmds:
+    - hetzner-k3s upgrade --config cluster_config.yaml --new-k3s-version {{.CLI_ARGS}}
+
+  releases:
+    cmds:
+    - hetzner-k3s releases
