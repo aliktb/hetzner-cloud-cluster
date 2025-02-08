@@ -1,7 +1,7 @@
 ---
 cluster_name: voyager
 kubeconfig_path: "./kubeconfig"
-k3s_version: v1.31.2+k3s1
+k3s_version: v1.32.1+k3s1
 
 networking:
   ssh:
